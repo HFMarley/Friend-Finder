@@ -1,4 +1,6 @@
 var path = require("path");
+
+//require the exported object content from friend.js file
 var friendsList = require("../data/friend");
 
 module.exports = function (app) {
@@ -12,6 +14,7 @@ module.exports = function (app) {
   });
 
   app.post("/api/friends", function (req, res) {
+    console.log(req.body);
     var currentFriend = req.body;
 
     if (friendsList.length >= 1) {
