@@ -1,9 +1,12 @@
 var path = require("path");
+var friendsList = require("../data/friend");
 
 module.exports = function (app) {
-  var friendsList = [];
   var bestMatches = [];
 
+  //the response from these routes return data in the form of JSON objects 
+
+  //this route will match any GET HTTP requests to the url: api/friends
   app.get("/api/friends", function (req, res) {
     res.json(friendsList);
   });

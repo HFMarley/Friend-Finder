@@ -1,7 +1,7 @@
 module.exports = [
   {
   name: "Hank",
-  photo: "https//media.test",
+  photo: "http://www.best-cat-art.com/images/striped-tabby-cat-250x333.jpg",
   scores: [
       5,
       1,
